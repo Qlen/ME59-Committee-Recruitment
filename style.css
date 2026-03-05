@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Kanit', sans-serif;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0; 
+    overflow-y: auto; 
+    overflow-x: hidden; 
+    width: 100%; 
+    min-height: 100vh; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    color: rgb(0, 0, 0); 
+    display: flex;
+    flex-direction: column;
+}  
+
+header {
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: rgb(255, 255, 255);
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: #303E52;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;   /* เว้นระยะระหว่างเมนู */
+}
+
+nav a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    color: #303E52;
+}
+
+nav a.active {
+    color: #073580;
+}
+nav a:hover {
+    color: #073580;
+    border-bottom: 3px solid #073580;
+}
+
+.Home {
+    background-color: #1f2d44;
+    border-radius: 0;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 900px;
+}
+
+.Home h1 {
+    font-size: 2.5rem;
+}
+.Home p {
+    font-size: 1.2rem;
+    color: rgb(224, 224, 224);
+}
+
+/****************** 768 *********************/
+@media (max-width: 768px) {
+
+    header {
+        padding: 1rem 5%;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    nav {
+        gap: 1rem;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+    }
+
+    .Home {
+        padding: 40px 15px;
+        margin: 30px 15px;
+    }
+
+    .Home h1 {
+        font-size: 1.8rem;
+    }
+
+    .Home p {
+        font-size: 1rem;
+    }
+}
