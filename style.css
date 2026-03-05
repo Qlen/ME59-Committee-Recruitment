@@ -99,7 +99,7 @@ nav a:hover {
 }
 
 /****************** 768 *********************/
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
 
     header {
         padding: 1rem 5%;
@@ -119,7 +119,7 @@ nav a:hover {
 
     .Home {
         padding: 40px 15px;
-        margin: 30px 15px;
+        margin: 0 auto;
     }
 
     .Home h1 {
