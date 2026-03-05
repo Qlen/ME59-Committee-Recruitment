@@ -147,9 +147,10 @@ nav a:hover {
     font-size: 1.2rem;
     margin-bottom:5px;
 
-     display: -webkit-box;
-    -webkit-line-clamp: 2;   /* จำกัด 2 บรรทัด */
+    display: -webkit-box;
     -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;   /* จำกัด 2 บรรทัด */
+    line-clamp: 2;  
     overflow: hidden;
 }
 
@@ -238,10 +239,6 @@ nav a:hover {
     nav.active{
         display:flex;
     }
-
-    .Last-news h3{
-        font-size: 1.2rem;
-    }
 }
 
 /********************************************* 768 ************************************************/
@@ -301,7 +298,26 @@ nav a:hover {
         display:flex;
     }
 
-    .Last-news h3{
-        font-size: 1.2rem;
+    .Last-news h3 {
+        font-size: 1.8rem;
     }
+
+    .new-content h3{
+        font-size: 1rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;   /* จำกัด 2 บรรทัด */
+        line-clamp: 1;  
+        overflow: hidden;
+        margin-bottom:0px;
+    }
+    
+    .new-content p{
+        font-size: 0.9rem;
+    }
+
+    .new-content p {
+        color:#666;
+        margin-bottom:10px;
+    } 
 }
