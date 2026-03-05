@@ -146,6 +146,11 @@ nav a:hover {
 .new-content h3 {
     font-size: 1.2rem;
     margin-bottom:5px;
+
+     display: -webkit-box;
+    -webkit-line-clamp: 2;   /* จำกัด 2 บรรทัด */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .new-content p {
@@ -178,7 +183,7 @@ nav a:hover {
     cursor:pointer;
 }
 
-/****************** 768 *********************/
+/********************************************* 1200 ************************************************/
 @media (max-width: 1200px) {
 
     header {
@@ -235,6 +240,68 @@ nav a:hover {
     }
 
     .Last-news h3{
-        font-size: 2rem;
+        font-size: 1.2rem;
+    }
+}
+
+/********************************************* 768 ************************************************/
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 1rem 5%;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    nav {
+        gap: 1rem;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+    }
+
+    .Home {
+        padding: 40px 15px;
+        margin: 0 auto;
+    }
+
+    .Home h1 {
+        font-size: 1.8rem;
+    }
+
+    .Home p {
+        font-size: 1rem;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    nav{
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:white;
+
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+
+        padding:20px 0;
+
+        display:none;
+    }
+
+    nav.active{
+        display:flex;
+    }
+
+    .Last-news h3{
+        font-size: 1.2rem;
     }
 }
