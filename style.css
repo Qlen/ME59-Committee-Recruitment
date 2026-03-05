@@ -22,8 +22,6 @@ body {
     background-position: center;
     background-repeat: no-repeat; 
     color: rgb(0, 0, 0); 
-    display: flex;
-    flex-direction: column;
 }  
 
 header {
@@ -37,6 +35,9 @@ header {
     
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1); 
     z-index: 100;
+
+    position:sticky;
+    top:0;
 }
 
 .menu-toggle{
@@ -84,10 +85,10 @@ nav a:hover {
     border-radius: 0;
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding: 40px 20px;
     margin: 0px auto;
     width: 100%;
-    max-width: 900px;
+    /*max-width: 900px;*/
 }
 
 .Home h1 {
@@ -96,6 +97,85 @@ nav a:hover {
 .Home p {
     font-size: 1.2rem;
     color: rgb(224, 224, 224);
+}
+
+.Last-news {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.Last-news h3{
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom:20px;
+}
+
+.news-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap:30px;
+    max-width:1600px;
+    margin:auto;
+}
+
+.lastnew{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.lastnew:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.15);
+    
+}
+
+.lastnew img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.new-content {
+    text-align: left;
+    padding-left: 5px;
+}
+
+.new-content h3 {
+    font-size: 1.2rem;
+    margin-bottom:5px;
+}
+
+.new-content p {
+    font-size:1rem;
+    color:#666;
+    margin-bottom:30px;
+}
+
+.news-date{
+    font-size:0.85rem;
+    color:#666;
+}
+
+.Last-news h2 {
+    background-color: #000000;
+    color: #ffffff;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:1rem;
+    font-weight: 300;
+    padding: 10px 20px;
+    max-width: 150px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.Last-news h2:hover{
+    background:#333;
+    cursor:pointer;
 }
 
 /****************** 768 *********************/
@@ -152,5 +232,9 @@ nav a:hover {
 
     nav.active{
         display:flex;
+    }
+
+    .Last-news h3{
+        font-size: 2rem;
     }
 }
