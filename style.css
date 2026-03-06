@@ -255,6 +255,10 @@ nav a:hover {
     .Last-news h2{
         margin-top: 20px;
     }
+
+    .Last-news {
+        padding: 20px 20px;
+    }
 }
 
 /********************************************* 768 ************************************************/
@@ -365,7 +369,6 @@ nav a:hover {
         margin-right: 0px;
     }
     .Last-news {
-        text-align: center;
         padding: 20px 20px;
     }
 
