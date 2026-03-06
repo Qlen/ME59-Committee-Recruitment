@@ -242,6 +242,19 @@ nav a:hover {
     nav.active{
         display:flex;
     }
+
+    .lastnew img{
+        width:220px;
+        height:auto;
+    }
+
+    .news-container .lastnew:nth-child(n+5) {
+        display: none;
+    }
+
+    .Last-news h2{
+        margin-top: 20px;
+    }
 }
 
 /********************************************* 768 ************************************************/
