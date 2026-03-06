@@ -124,7 +124,10 @@ nav a:hover {
     overflow:hidden;
     box-shadow:0 4px 12px rgba(0,0,0,0.1);
     transition:0.3s;
+    border: 1px solid #ddd;
+    padding: 15px;
 }
+
 
 .lastnew:hover{
     transform:translateY(-5px);
@@ -302,22 +305,55 @@ nav a:hover {
         font-size: 1.8rem;
     }
 
+    .news-container{
+        gap:5px;
+    }
+
     .new-content h3{
         font-size: 1rem;
         display: -webkit-box;
         -webkit-box-orient: vertical;
-        -webkit-line-clamp: 1;   /* จำกัด 2 บรรทัด */
-        line-clamp: 1;  
+        -webkit-line-clamp: 2;   /* จำกัด 2 บรรทัด */
+        line-clamp: 2;  
         overflow: hidden;
         margin-bottom:0px;
     }
     
-    .new-content p{
-        font-size: 0.9rem;
+    .new-content{
+        flex: 1;
+    }
+
+    .new-content span{
+        font-size: 0.7rem;
     }
 
     .new-content p {
         color:#666;
-        margin-bottom:10px;
+        margin-bottom:0px;
+        font-size: 0.8rem;
     } 
+
+    .lastnew{
+        display: flex;
+        gap: 15px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 15px;
+        align-items: flex-start;
+    }
+
+    .lastnew img{
+        width:120px;
+        height:auto;
+    }
+
+    .Last-news h2{
+        margin-top: 10px;
+        margin-right: 0px;
+    }
+    .Last-news {
+        text-align: center;
+        padding: 20px 20px;
+    }
+
 }
