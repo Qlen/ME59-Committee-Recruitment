@@ -244,10 +244,13 @@ nav a:hover {
     }
 
     .lastnew img{
-        width:220px;
+        width:240px;
         height:auto;
     }
 
+    .news-container{
+        gap:10px;
+    }
     .news-container .lastnew:nth-child(n+5) {
         display: none;
     }
@@ -377,4 +380,3 @@ nav a:hover {
     }
 
 }
-
