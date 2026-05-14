@@ -54,6 +54,13 @@ header {
     color: #303E52;
 }
 
+.logo-img {
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
 .logo:hover {
     transform: scale(1.1);
 }
@@ -102,6 +109,7 @@ nav a:hover {
 .Last-news {
     text-align: center;
     padding: 20px 20px;
+    margin-bottom: 20px;
 }
 
 .Last-news h3{
@@ -126,6 +134,7 @@ nav a:hover {
     transition:0.3s;
     border: 1px solid #ddd;
     padding: 15px;
+    cursor:pointer;
 }
 
 
@@ -187,8 +196,108 @@ nav a:hover {
     cursor:pointer;
 }
 
+.section-Freshy-News{
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom:20px;
+}
+
+.Freshy-News {
+    background-color: #202835;
+    border-radius: 10px;
+    text-align: center;
+    padding: 70px 100px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto; 
+    color: #ffffff; 
+}
+
+.Freshy-News-container{
+    margin-bottom: 100px;
+}
+
+.Freshy-News-container-heading{
+    display: flex;
+}
+
+.Freshy-News-container-heading-yellow-line{
+    width: 6px;
+    height: 50px;
+    background-color: #f2c300;
+    margin-right: 18px;
+}
+
+.Freshy-News-container-heading-title{
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom:20px;
+}
+.Freshy-News-container-content-ggd img{
+    width: 100%;
+    max-width: 270px;
+    height: auto;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.Freshy-News-container-content-ggd{
+    display: flex;
+    gap: 100px;
+    margin: 50px;
+}
+
+.Freshy-News-container-content-ggd-qr span{
+    font-weight: 200;
+}
+
+.Freshy-News-container-content-ggd-text h1{
+    margin-bottom: 10px;
+}
+
+.Freshy-News-container-content-ggd h3{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.Freshy-News-container-heading-black-line{
+    width: 900px;
+    height: 3px;
+    background-color: #000000;
+    margin-bottom: 10px;
+    
+}
+
+.Freshy-News-container-content-ggd-text h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-bottom: 3px solid #ffffff ;
+    display: inline-block;
+    padding-bottom: 5px;
+    
+}
+
+.Freshy-News-container-content-ggd-text h4{
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.Freshy-News-container-content-ggd-bottom{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    
+}
+
 /********************************************* 1200 ************************************************/
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
 
     header {
         padding: 1rem 5%;
@@ -262,6 +371,11 @@ nav a:hover {
     .Last-news {
         padding: 20px 20px;
     }
+
+    .Freshy-News{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 
 /********************************************* 768 ************************************************/
@@ -322,7 +436,7 @@ nav a:hover {
     }
 
     .Last-news h3 {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 
     .news-container{
@@ -379,4 +493,90 @@ nav a:hover {
         display: none;
     }
 
+    .section-Freshy-News{
+        font-size: 1.7rem;
+    }
+
+    .Freshy-News {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 20px 30px;
+    }
+
+    .Freshy-News-container-heading-yellow-line{
+        width: 3px;
+        height: 30px;
+    }
+
+    .Freshy-News-container-heading-title{
+        font-size: 1.1rem;
+    }
+
+    .Freshy-News-container-content-ggd-qr{
+        display: flex;
+        gap: 20px;
+    }
+
+    .Freshy-News-container-content-ggd-qr span{
+        font-size: 0.8rem;
+        font-weight: 100;
+        margin-top: 25px;
+    }
+
+    .Freshy-News-container-content-ggd{
+        margin: 10px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Freshy-News-container-content-ggd img{
+        width: 100%;
+        max-width: 70px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .Freshy-News-container-content-ggd-text h1{
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    .Freshy-News-container-content-ggd-text h3{
+        font-size: 0.9rem;
+        font-weight: 100;
+    }
+    
+    .Freshy-News-container-heading-black-line{
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 3px;
+        margin-bottom: 10px;
+    }
+
+    
+    .Freshy-News-container-content-ggd-text h2{
+        font-size: 0.8rem;
+        font-weight: 200;
+        border-bottom: 3px solid #ffffff ;
+        display: inline-block;
+        padding-bottom: 5px;
+    
+    }
+
+    .Freshy-News-container-content-ggd-text h4{
+        font-size: 0.8rem;
+        font-weight: 100;
+        text-align: left;
+        margin-top: 10px;
+        
+    }
+
+    .Freshy-News-container-content-ggd-bottom{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
 }
