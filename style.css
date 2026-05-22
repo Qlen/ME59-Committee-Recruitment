@@ -970,6 +970,12 @@ nav a:hover {
         margin-left: -10px;
     }
 
+    .mobile-scroll-text{
+        display: contents;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
 }
 
 /********************************************* 768 ************************************************/
