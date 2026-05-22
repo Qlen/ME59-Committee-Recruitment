@@ -652,6 +652,10 @@ nav a:hover {
     margin-left: -20px;
 }
 
+.mobile-scroll-text{
+    display: none;
+}
+
 
 /********************************************* notebook ************************************************/
 @media (min-width: 1201px) and (max-width: 1600px){
@@ -1221,6 +1225,7 @@ nav a:hover {
 
     .Freshy-News-container-content-location{
         margin: 20px;
+        margin-bottom: -20px;
     }
 
     .Freshy-News-container-content-location-set{
@@ -1365,5 +1370,10 @@ nav a:hover {
         margin-bottom: -25px;
     }
 
+    .mobile-scroll-text{
+        display: contents;
+        font-size: 0.8rem;
+        font-weight: 100;
+    }
 }
 
