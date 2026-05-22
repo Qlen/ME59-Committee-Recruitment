@@ -656,6 +656,15 @@ nav a:hover {
     display: none;
 }
 
+.click-pic{
+    display: flex;
+    margin-left: 30px;
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-top: -20px;
+    color: rgba(255, 0, 0, 0.719);
+}
+
 
 /********************************************* notebook ************************************************/
 @media (min-width: 1201px) and (max-width: 1600px){
@@ -1380,6 +1389,12 @@ nav a:hover {
         display: contents;
         font-size: 0.8rem;
         font-weight: 100;
+    }
+
+    .click-pic{
+        font-size: 0.8rem;
+        font-weight: 100;
+        margin-left: 20px;
     }
 }
 
