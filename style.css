@@ -1,593 +1,1436 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="img/ME59_logo.jpg">
-    <script src="https://kit.fontawesome.com/dd3134d2cd.js" crossorigin="anonymous"></script>
-    <title>ME59 Committee Recruitment</title>
-</head>    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Kanit', sans-serif;
+}
 
-<body>
-    <header>
-        <a href="index.html" class="logo"> ME59 Committee Recruitment </a>
+html {
+    font-size: 100%;
+}
 
-        <div class="menu-toggle" id="menu-toggle">☰</div>
+body {
+    margin: 0; 
+    overflow-y: auto; 
+    overflow-x: hidden; 
+    width: 100%; 
+    min-height: 100vh; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    color: rgb(0, 0, 0); 
+}  
 
-        <nav id="nav-menu">
-            <a href="index.html" class="active" >หน้าหลัก</a>
-            <a href="Announce.html">ประชาสัมพันธ์</a>
-            <a href="Activity.html">กิจกรรม</a>
-            <a href="Verify.html">ตรวจสอบ</a>
-            <a href="About.html">เกี่ยวกับ</a>
-            <a href="Contact.html">ติดต่อ</a>
-        </nav>
-    </header>
+header {
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: rgb(255, 255, 255);
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1); 
+    z-index: 100;
 
-    <section class="Home">
-        <div>
-            <h1>คณะทำงานภาควิชาเครื่องกล</h1>
-            <p>ภาคปกติ รุ่น ME59 | มหาวิทยาลัยเกษตรศาสตร์</p>
-        </div>
-    </section>
-<!--
-    <section class="Last-news">
-        <h3>ข่าวสารและกิจกรรม</h3>
-        <div class="news-container">
-            <div class="lastnew">
-                <img src="img/ME59_logo.jpg" alt="news">
-                <div class="new-content">
-                    <h3>เนื่องในโอกาส งานครบรอบ 60 ปีของภาควิชา ที่จะจัดขึ้นในวันอาทิตย์ที่ 8 มีนาคมนี้ ทางทีมงานต้องการอาสาสมัครนิสิตจำนวน 8 คน</h3>
-                    <p>รับสมัครถึง 7 มีนาคม 2569</p>
-                    <span class="news-date">5 มีนาคม 2569</span>
-                </div>
-            </div>
-            <div class="lastnew">
-                <img src="img/ME59_logo.jpg" alt="news">
-                <div class="new-content">
-                    <h3>เนื่องในโอกาส งานครบรอบ 60 ปีของภาควิชา ที่จะจัดขึ้นในวันอาทิตย์ที่ 8 มีนาคมนี้ ทางทีมงานต้องการอาสาสมัครนิสิตจำนวน 8 คน</h3>
-                    <p>รับสมัครถึง 7 มีนาคม 2569</p>
-                    <span class="news-date">5 มีนาคม 2569</span>
-                </div>
-            </div>
-            <div class="lastnew">
-                <img src="img/ME59_logo.jpg" alt="news">
-                <div class="new-content">
-                    <h3>เนื่องในโอกาส งานครบรอบ 60 ปีของภาควิชา ที่จะจัดขึ้นในวันอาทิตย์ที่ 8 มีนาคมนี้ ทางทีมงานต้องการอาสาสมัครนิสิตจำนวน 8 คน</h3>
-                    <p>รับสมัครถึง 7 มีนาคม 2569</p>
-                    <span class="news-date">5 มีนาคม 2569</span>
-                </div>
-            </div>
-            <div class="lastnew">
-                <img src="img/ME59_logo.jpg" alt="news">
-                <div class="new-content">
-                    <h3>เนื่องในโอกาส งานครบรอบ 60 ปีของภาควิชา ที่จะจัดขึ้นในวันอาทิตย์ที่ 8 มีนาคมนี้ ทางทีมงานต้องการอาสาสมัครนิสิตจำนวน 8 คน</h3>
-                    <p>รับสมัครถึง 7 มีนาคม 2569</p>
-                    <span class="news-date">5 มีนาคม 2569</span>
-                </div>
-            </div>
-            <div class="lastnew">
-                <img src="img/ME59_logo.jpg" alt="news">
-                <div class="new-content">
-                    <h3>เนื่องในโอกาส งานครบรอบ 60 ปีของภาควิชา ที่จะจัดขึ้นในวันอาทิตย์ที่ 8 มีนาคมนี้ ทางทีมงานต้องการอาสาสมัครนิสิตจำนวน 8 คน</h3>
-                    <p>รับสมัครถึง 7 มีนาคม 2569</p>
-                    <span class="news-date">5 มีนาคม 2569</span>
-                </div>
-            </div>
-        </div>
-        <a href="Announce.html" class=""> <h2>ข่าวทั้งหมด ></h2> </a>
+    position:sticky;
+    top:0;
+}
+
+.menu-toggle{
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: #303E52;
+}
+
+.logo-img {
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;   /* เว้นระยะระหว่างเมนู */
+}
+
+nav a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    color: #303E52;
+}
+
+nav a.active {
+    color: #073580;
+}
+nav a:hover {
+    color: #073580;
+    border-bottom: 3px solid #073580;
+}
+
+.Home {
+    background-color: #2F3D50;
+    border-radius: 0;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin: 0px auto;
+    width: 100%;
+    /*max-width: 900px;*/
+    margin-bottom: 20px;
+}
+
+.Home h1 {
+    font-size: 2.5rem;
+}
+.Home p {
+    font-size: 1.2rem;
+    color: rgb(224, 224, 224);
+}
+
+.Last-news {
+    text-align: center;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+}
+
+.Last-news h3{
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom:20px;
+}
+
+.news-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap:30px;
+    max-width:1600px;
+    margin:auto;
+}
+
+.lastnew{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    transition:0.3s;
+    border: 1px solid #ddd;
+    padding: 15px;
+    cursor:pointer;
+}
+
+
+.lastnew:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.15);
+    
+}
+
+.lastnew img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.new-content {
+    text-align: left;
+    padding-left: 5px;
+}
+
+.new-content h3 {
+    font-size: 1.2rem;
+    margin-bottom:5px;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;   /* จำกัด 2 บรรทัด */
+    line-clamp: 2;  
+    overflow: hidden;
+}
+
+.new-content p {
+    font-size:1rem;
+    color:#666;
+    margin-bottom:30px;
+}
+
+.news-date{
+    font-size:0.85rem;
+    color:#666;
+}
+
+.Last-news h2 {
+    background-color: #000000;
+    color: #ffffff;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:1rem;
+    font-weight: 300;
+    padding: 10px 20px;
+    max-width: 150px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.Last-news h2:hover{
+    background:#333;
+    cursor:pointer;
+}
+
+.section-Freshy-News{
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 3rem;
+    font-weight:400;
+}
+
+.Freshy-News {
+    background-color: #202835;
+    border-radius: 10px;
+    text-align: center;
+    padding: 70px 100px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto; 
+    color: #ffffff;
+}
+
+.Freshy-News-container{
+    margin-bottom: 100px;
+}
+
+.Freshy-News-container-heading{
+    display: flex;
+}
+
+.Freshy-News-container-heading-yellow-line{
+    width: 6px;
+    height: 50px;
+    background-color: #f2c300;
+    margin-right: 18px;
+}
+
+.Freshy-News-container-heading-title{
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom:20px;
+}
+.Freshy-News-container-content-ggd img{
+    width: 100%;
+    max-width: 270px;
+    height: auto;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-bottom: 10px;
+
+    transition: 0.3s ease;
+}
+
+.Freshy-News-container-content-ggd img:hover{
+    transform: scale(1.02);
+}
+
+
+.Freshy-News-container-content-ggd{
+    display: flex;
+    gap: 100px;
+    margin: 50px;
+}
+
+.Freshy-News-container-content-ggd-qr span{
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.Freshy-News-container-content-ggd-text h1{
+    margin-bottom: 10px;
+}
+
+.Freshy-News-container-content-ggd h3{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.Freshy-News-container-heading-black-line{
+    width: 900px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 3px;
+    background-color: #000000;
+    margin-bottom: 10px;
+}
+
+.Freshy-News-container-content-ggd-text h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-bottom: 3px solid #ffffff ;
+    display: inline-block;
+    padding-bottom: 5px;
+    
+}
+
+.Freshy-News-container-content-ggd-text h4{
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.mobile-break{
+    display: inline;
+    margin-left: 0;
+}
+
+.Freshy-News-container-content-ggd-bottom{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.Freshy-News-container-content-map{
+    display: flex;
+    margin: 50px;
+}
+
+.Freshy-News-container-content-map-pic span{
+    font-size: 1.2rem;
+    font-weight: 200;
+    display: grid;
+}
+
+.Freshy-News-container-content-map-pic img{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 10px;
+
+    transition: 0.3s ease;
+}
+
+.Freshy-News-container-content-map-pic img:hover{
+    transform: scale(1.01);
+}
+
+
+.Freshy-News-container-heading-black-line-maps{
+    width: 550px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 3px;
+    background-color: #000000;
+    margin-bottom: 10px;
+}
+
+.Freshy-News-container-content-map {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Freshy-News-container-content-map-text h1{
+    margin-bottom: 0px;
+}
+
+.Freshy-News-container-content-map-text h3{ 
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.Freshy-News-container-content-map-text h4{
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-align: left;
+}
+
+.Freshy-News-container-content-location{
+    margin: 50px;
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    anchor-name: --Freshy-News-container-content-location;
+    scroll-snap-type: x mandatory;
+    
+}
+
+.Freshy-News-container-content-location::-webkit-scrollbar{
+    display: none;
+}
+
+.Freshy-News-container-content-location::scroll-button(right), .Freshy-News-container-content-location::scroll-button(left){
+    content: '❯';
+    border: none;
+    background-color: transparent;
+    font-size: 4rem;
+    color: #ffffff;
+    height: 60px;
+    width: 60px;
+    padding-bottom: .1em;
+    cursor: pointer;
+    position: fixed;
+    position-anchor: --Freshy-News-container-content-location;
+    position-area: right center; 
+    bottom: 80px;
+    translate: -30%;
+    text-shadow:
+        3px 3px 5px rgba(0,0,0,0.9),
+        0 0 10px rgba(0,0,0,0.8),
+        0 0 20px rgba(0,0,0,0.7);
+}
+
+.Freshy-News-container-content-location::scroll-button(left){
+    content: '❮';
+    position-area: left center;
+    translate: 30%;
+}
+
+.Freshy-News-container-content-location::scroll-button(right):disabled, .Freshy-News-container-content-location::scroll-button(left):disabled{
+    opacity: 0.5;
+    cursor: auto;
+}
+
+.Freshy-News-container-content-location-set{
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+    min-width: calc((100% - 4rem) / 5);
+    scroll-snap-align: start;
+}
+
+.Freshy-News-container-content-location-set img{
+    width: 247px;
+    height: 170px;
+
+    object-fit: cover;
+
+    transition: 0.3s ease;
+}
+
+.Freshy-News-container-content-location-set img:hover{
+    transform: scale(1.03);
+}
+
+.Freshy-News-container-content-location-set h4{
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: 200;
+    min-height: 60px;
+}
+
+.Freshy-News-container-content-canteen{
+    display: flex;
+    margin: 50px;
+    justify-content: space-between;
+}
+
+.Freshy-News-container-content-canteen img{
+    width: 400px;
+    height: 250px;
+    margin-bottom: 10px;
+
+    transition: 0.3s ease;
+}
+
+.Freshy-News-container-content-canteen img:hover{
+    transform: scale(1.03);
+}
+
+.Freshy-News-container-content-canteen-text h2{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.Freshy-News-container-content-canteen-text h3{
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: left;
+}
+
+.canteen-indent{
+    display: inline-block;
+    margin-left: 95px;
+}
+
+.canteen-label{
+    display: inline-block;
+    width: 90px;
+    font-weight: 400;
+}
+
+.Freshy-News-container-content-checklist{
+    margin: 50px;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    anchor-name: --Freshy-News-container-content-checklist;
+    padding-right: 1px
+}
+
+.Freshy-News-container-content-checklist::-webkit-scrollbar{
+    display: none;
+}
+
+.Freshy-News-container-content-checklist::scroll-button(right), .Freshy-News-container-content-checklist::scroll-button(left){
+    content: '❯';
+    border: none;
+    background-color: transparent;
+    font-size: 4rem;
+    color: #ffffff;
+    height: 60px;
+    width: 60px;
+    padding-bottom: .1em;
+    cursor: pointer;
+    position: fixed;
+    position-anchor: --Freshy-News-container-content-checklist;
+    position-area: right center; 
+    bottom: 80px;
+    translate: -30%;
+    text-shadow:
+        3px 3px 5px rgba(0,0,0,0.9),
+        0 0 10px rgba(0,0,0,0.8),
+        0 0 20px rgba(0,0,0,0.7);
+}
+
+.Freshy-News-container-content-checklist::scroll-button(left){
+    content: '❮';
+    position-area: left center;
+    translate: 30%;
+}
+
+.Freshy-News-container-content-checklist::scroll-button(right):disabled, .Freshy-News-container-content-checklist::scroll-button(left):disabled{
+    opacity: 0.5;
+    cursor: auto;
+}
+
+.Freshy-News-container-content-checklist-set{
+    background-color: #3d4f689d;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding-bottom: 20px;
+    scroll-snap-align: start;
+    min-width: calc((100% - 40px) / 3);
+}
+
+.Freshy-News-container-content-checklist-set h2{
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 30px 0px;
+    text-align: left;
+}
+
+.Freshy-News-container-content-checklist-set label{
+    font-size: 1.3rem;
+    font-weight: 200;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+    color: white;
+    margin-left: 40px;
+    text-align: left;
+    align-items: first baseline;
+}
+
+.Freshy-News-container-content-checklist-set-text{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left:50px;
+}
+
+.Freshy-News-container-content-checklist-set-text svg{
+    font-size: 2rem;
+}
+
+.Freshy-News-container-content-checklist-set p{
+    font-weight: 100;
+    font-size: 1rem;
+    color: red;
+    text-align: start;
+    margin-left: 30px;
+}
+
+.Freshy-News-container-content-app{
+    display: flex;
+    margin: 50px;
+    gap: 20px;
+}
+
+.Freshy-News-container-content-app img{
+    transition: 0.3s ease;
+}
+
+.Freshy-News-container-content-app img:hover{
+    transform: scale(1.03);
+}
+
+.Freshy-News-container-content-app-app{
+    background-color: #3d4f689d;
+    width: 650px;
+    border-radius: 15px;
+}
+
+.Freshy-News-container-content-app h2{
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 30px 0;
+}
+
+.Freshy-News-container-content-app-ig {
+    background-color: #3d4f689d;
+    width: calc((100% - 20px));
+    border-radius: 15px;
+}
+
+.Freshy-News-container-content-app-app-heading{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+
+.Freshy-News-container-content-app svg{
+    font-size: 2rem;
+}
+
+.Freshy-News-container-content-app-app-pic img{
+    width: 100px;
+    height: auto;
+    border-radius: 25px;
+    margin-left: 30px;
+}
+
+.Freshy-News-container-content-app-app-pic{
+    display: grid;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.app {
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+}
+
+.app h3{
+    font-size: 2rem;
+    font-weight: 200;
+    margin-left: 50px;
+}
+
+.Freshy-News-container-content-app-ig-set{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.Freshy-News-container-content-app-ig-set-pic img{
+    max-width: 255px;
+    height: 100px;
+    margin-left: 30px;
+    display: grid;
+}
+
+.Freshy-News-container-content-app-ig-set-text h3{
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.Freshy-News-container-content-app-ig-set-text h4{
+    font-size: 1rem;
+    font-weight: 200; 
+    margin-left: -20px;
+}
+
+.mobile-scroll-text{
+    display: none;
+}
+
+.click-pic{
+    display: flex;
+    margin-left: 30px;
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-top: -20px;
+    color: rgba(255, 0, 0, 0.719);
+}
+
+
+/********************************************* notebook ************************************************/
+@media (min-width: 1201px) and (max-width: 1600px){
+    .Freshy-News-container-heading-black-line{
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 3px;
+        margin-bottom: 10px;
+    }    
+    
+    .Freshy-News-container-content-ggd-qr span{
+        display:block;
+    }
+
+    .Freshy-News{
+        margin: 0 40px;
+    }
+
+    .Freshy-News-container-heading-black-line-maps{
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 3px;
+        margin-bottom: 10px;
+    }
+
+    .Freshy-News-container-content-map{
+        gap: 50px;
+    }
+
+    .Freshy-News-container-content-location-set img{
+        width: 228px;
+        height: 160px;
+    }
+
+    .Freshy-News-container-content-canteen img{
+        width: 360px;
+        height: 225px;
+    }
+
+    .Freshy-News-container-content-canteen h2{
+        font-size: 1.1rem;
+    }
+
+    .Freshy-News-container-content-canteen h3{
+        font-size: 0.9rem;
+    }
+
+    .canteen-indent{
+        margin-left: 85px;
+    }
+
+    .canteen-label{
+        width: 80px;
+    }
+}
+
+/********************************************* 1200 ************************************************/
+@media (max-width: 1200px) {
+
+    header {
+        padding: 1rem 5%;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    nav {
+        gap: 1rem;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+    }
+
+    .Home {
+        padding: 40px 15px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .Home h1 {
+        font-size: 1.8rem;
+    }
+
+    .Home p {
+        font-size: 1rem;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    nav{
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:white;
+
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+
+        padding:20px 0;
+
+        display:none;
+    }
+
+    nav.active{
+        display:flex;
+    }
+
+    .lastnew img{
+        width:100%;
+        height:auto;
+    }
+
+    .news-container{
+        gap:10px;
+    }
+    .news-container .lastnew:nth-child(n+5) {
+        display: none;
+    }
+
+    .Last-news h2{
+        margin-top: 20px;
+    }
+
+    .Last-news {
+        padding: 20px 20px;
+    }
+
+    .Freshy-News{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .Freshy-News-container-heading-black-line{
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 3px;
+        margin-bottom: 10px;
+    }
+
+    .Freshy-News-container-content-ggd-qr span{
+        font-size: 1.2rem;
+        font-weight: 200;
+        margin-top: 25px;
+    }
+    .Freshy-News-container-content-ggd-text h2{
+        font-size: 1.5rem;
+        font-weight: 200;
+        border-bottom: 3px solid #ffffff ;
+        display: inline-block;
+        padding-bottom: 5px;
+    
+    }
+
+    .Freshy-News-container-content-ggd-text h4{
+        font-size: 1.2rem;
+        font-weight: 100;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .Freshy-News-container-content-ggd-bottom{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .mobile-break{
+        display: block;
+        margin-left: 10px;
+    }
+    
+    .Freshy-News-container-content-map{
+        gap: 50px;
+    }
+
+    .Freshy-News-container-content-map h4{
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+
+    .Freshy-News-container-content-map img{
+        width: 400px;
+        height: auto;
+    }
+
+    .Freshy-News-container-heading-black-line-maps{
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 3px;
+        margin-bottom: 10px;
+    }
+
+    .Freshy-News-container-content-location-set img{
+        width: 150px;
+        height: 100px;
+    }
+
+    .Freshy-News-container-content-location-set h4{
+        font-size: 0.8rem;
+        font-weight: 200; 
+    }
+
+    .location-wrapper{
+        border-radius: 10px;
+        background-color: #3d4f689d;
+        margin-top: 20px;
+        padding-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .Freshy-News-container-content-canteen img{
+        width: 260px;
+        height: 163px;
+    }
+
+    .Freshy-News-container-content-canteen h2{
+        font-size: 0.8rem;
+    }
+
+    .Freshy-News-container-content-canteen h3{
+        font-size: 0.65rem;
+    }
+
+    .canteen-indent{
+        margin-left: 62px;
+    }
+
+    .canteen-label{
+        width: 60px;
+    }
+
+    .Freshy-News-container-content-checklist-set{
+        min-width: calc((100% - 20px) / 2);
+    }
+
+    .Freshy-News-container-content-checklist-set h2{
+        font-size: 1.6rem;
+        font-weight: 300;
+        margin: 30px 0px;
+        text-align: left;
+    }
+
+    .Freshy-News-container-content-checklist-set label{
+        font-size: 1.3rem;
+        font-weight: 200;
+        display: flex;
+        gap: 10px;
+        margin-bottom: 12px;
+        color: white;
+        margin-left: 40px;
+    }
+
+    .Freshy-News-container-content-checklist-set-text{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-left:50px;
+    }
+
+    .Freshy-News-container-content-checklist-set-text svg{
+        font-size: 2rem;
+    }
+
+    .Freshy-News-container-content-app-app-pic img{
+        width: 80px;
+        height: auto;
+        border-radius: 10px;
+        margin-left: 30px;
+    }   
+
+    .Freshy-News-container-content-app h2{
+        font-size: 1.6rem;
+        font-weight: 300;
+        margin: 30px 0;
+    }
+
+    .Freshy-News-container-content-app-ig-set-pic img{
+        width: 200px;
+        height: 80px;
+    }
+
+    .Freshy-News-container-content-app h3{
+        font-size: 1.3rem;
+        font-weight: 200;
+    }
+
+    .Freshy-News-container-content-app-ig-set-text h4{
+        font-size: 0.8rem;
+        font-weight: 200;
+    }
+
+    .Freshy-News-container-content-app-ig {
+        width: calc((100% + 200px));
+    }
+
+    .app h3{
+        margin-left: 30px;
+    }
+
+    .Freshy-News-container-content-app-ig-set{
+        gap: 30px;
+    }
+ 
+    .Freshy-News-container-content-app-ig span{
+        display: grid;
+    }
+
+    .Freshy-News-container-content-app-ig-set-text h4{
+        margin-left: -10px;
+    }
+
+    .mobile-scroll-text{
+        display: contents;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+}
+
+/********************************************* 768 ************************************************/
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 1rem 5%;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    nav {
+        gap: 1rem;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+    }
+
+    .Home {
+        padding: 40px 15px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .Home h1 {
+        font-size: 1.8rem;
+    }
+
+    .Home p {
+        font-size: 1rem;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    nav{
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:white;
+
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+
+        padding:20px 0;
+
+        display:none;
+    }
+
+    nav.active{
+        display:flex;
+    }
+
+    .Last-news h3 {
+        font-size: 1.7rem;
+    }
+
+    .news-container{
+        gap:5px;
+    }
+
+    .new-content h3{
+        font-size: 1rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;   /* จำกัด 2 บรรทัด */
+        line-clamp: 2;  
+        overflow: hidden;
+        margin-bottom:0px;
+    }
+    
+    .new-content{
+        flex: 1;
+    }
+
+    .new-content span{
+        font-size: 0.7rem;
+    }
+
+    .new-content p {
+        color:#666;
+        margin-bottom:0px;
+        font-size: 0.8rem;
+    } 
+
+    .lastnew{
+        display: flex;
+        gap: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        align-items: flex-start;
+    }
+
+    .lastnew img{
+        width:120px;
+        height:auto;
+    }
+
+    .Last-news h2{
+        margin-top: 10px;
+        margin-right: 0px;
+    }
+    .Last-news {
+        padding: 20px 20px;
+    }
+
+    .news-container .lastnew:nth-child(n+4) {
+        display: none;
+    }
+
+    .section-Freshy-News{
+        font-size: 1.7rem;
+    }
+
+    .Freshy-News {
+        padding: 20px 30px;
+    }
+
+    .Freshy-News-container{
+        margin-bottom: 50px;
+    }   
+
+    .Freshy-News-container-heading-yellow-line{
+        width: 3px;
+        height: 30px;
+    }
+
+    .Freshy-News-container-heading-title{
+        font-size: 1.1rem;
+    }
+
+    .Freshy-News-container-content-ggd-qr{
+        display: flex;
+        gap: 20px;
+    }
+
+    .Freshy-News-container-content-ggd-qr span{
+        font-size: 0.8rem;
+        font-weight: 100;
+        margin-top: 25px;
+    }
+
+    .Freshy-News-container-content-ggd{
+        margin: 10px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Freshy-News-container-content-ggd img{
+        width: 100%;
+        max-width: 80px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .Freshy-News-container-content-ggd-text h1{
+        font-size: 1rem;
+        font-weight: 200;
+        margin-top: -20px;
+    }
+
+    .Freshy-News-container-content-ggd-text h3{
+        font-size: 0.9rem;
+        font-weight: 100;
+    }
+    
+    .Freshy-News-container-heading-black-line{
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 3px;
+        margin-bottom: 10px;
+    }
+
+    
+    .Freshy-News-container-content-ggd-text h2{
+        font-size: 0.8rem;
+        font-weight: 200;
+        border-bottom: 3px solid #ffffff ;
+        display: inline-block;
+        padding-bottom: 5px;
+    
+    }
+
+    .Freshy-News-container-content-ggd-text h4{
+        font-size: 0.75rem;
+        font-weight: 100;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .Freshy-News-container-content-ggd-bottom{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .mobile-break{
+        display: block;
+        margin-left: 10px;
         
-    </section>
--->
+    }
 
-    <h3 class="section-Freshy-News">เป็นเด็กวิศวะมก. ควรรู้อะไรบ้าง?</h3>
-    <section class="Freshy-News">
-        <div class="Freshy-News-container"> <!-- Freshy guide -->
-            <div class="Freshy-News-container-heading">
-                <div class="Freshy-News-container-heading-yellow-line"></div>
-                <div class="Freshy-News-container-heading-title">
-                    ปฏิทินและเอกสารประกอบการเรียน
-                </div>
-            </div>
-            <div class="Freshy-News-container-content-ggd">
-                <div class="Freshy-News-container-content-ggd-qr">
-                    <a href="https://drive.google.com/drive/folders/1r52EM_OENltDxRhRmwyUGQp2N1JNj2Lg">
-                        <img src="img/freshy_qr.jpg" alt="">
-                    </a> 
-                    <span>คลิกที่รูปเพื่อไปที่ google drive</span>
-                </div>
-                <div class="Freshy-News-container-content-ggd-text">
-                    <h1>ME60 Freshy Guide</h1>
-                    <h3> Google Drive ที่จะรวบรวมปฏิทินสำคัญและเอกสารประกอบการเรียนเพื่อช่วยให้น้องๆปี 1 <br>
-                    สามารถวางแผนการเรียนรวมถึงการทำกิจกรรมได้อย่างเหมาะสมและมีประสิทธิภาพ</h3>
-                    <div class="Freshy-News-container-heading-black-line"></div>
-                    <div class="Freshy-News-container-content-ggd-bottom">
-                        <div class="Freshy-News-container-content-ggd-left">
-                            <h2>ปฏิทินและหลักสูตร</h2>
-                            <h4> - ปฏิทินการศึกษา 2569 <br>
-                                - ปฏิทิน KU86 <br>
-                                - หลักสูตร ME <br> </h4>
-                        </div>
-                        <div class="Freshy-News-container-content-ggd-right">
-                            <h2>เอกสารวิชาการ</h2>
-                            <h4> - แผนการสอนรายวิชา <br>
-                                - รวมไฟล์เอกสารและ
-                                <span class="mobile-break">ข้อสอบย้อนหลัง</span> </h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    .Freshy-News-container-content-map{
+        display: grid;
+        margin: 0;
+        justify-content: center;
+    }
 
-        <div class="Freshy-News-container"> <!-- แผนที่ -->
-            <div class="Freshy-News-container-heading">
-                <div class="Freshy-News-container-heading-yellow-line"></div>
-                <div class="Freshy-News-container-heading-title">
-                    แผนที่มหาวิทยาลัย
-                </div>
-            </div>
-            <div class="Freshy-News-container-content-map">
-                <div class="Freshy-News-container-content-map-pic">
-                    <a href="img/maps.jpg" target="_blank">
-                        <img src="img/maps.jpg" alt="">
-                    </a>
-                    <span>คลิกที่รูปเพื่อขยาย</span>
-                </div>
-                <div class="Freshy-News-container-content-map-text">
-                    <h1>ทางเข้า-ออก</h1>
-                    <h3>มหาวิทยาลัยเกษตรศาสตร์</h3>
-                    <div class="Freshy-News-container-heading-black-line-maps"></div>
-                    <div class="Freshy-News-container-content-ggd-bottom">
-                        <div class="Freshy-News-container-content-ggd-left">
-                            <h4> - ประตูงามวงวานศ์ 1</h4>
-                            <h4> - ประตูงามวงวานศ์ 2</h4>
-                            <h4> - ประตูงามวงวานศ์ 3</h4>
-                            <h4> - ประตูวิภาวดีรังสิต</h4>
-                        </div>
-                        <div class="Freshy-News-container-content-ggd-right">
-                            <h4> - ประตูพหลโยธิน 1</h4>
-                            <h4> - ประตูพหลโยธิน 2</h4>
-                            <h4> - ซอยพหลโยธิน 45</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>    
-        </div>            
+    .Freshy-News-container-content-map img{
+        width: 200px;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
 
-        <div class="Freshy-News-container"> <!-- สถานที่สำคัญ -->
-            <div class="Freshy-News-container-heading">
-                <div class="Freshy-News-container-heading-yellow-line"></div>
-                <div class="Freshy-News-container-heading-title">
-                    สถานที่สำคัญ 
-                </div>
-            </div>
-            
-            <p class="click-pic">*คลิกที่รูปภาพเพื่อดูตำแหน่ง</p>
-            <div class="location-wrapper">
-                <div class="Freshy-News-container-content-location">
-                    <div class="Freshy-News-container-content-location-set">
-                        <a href="https://maps.app.goo.gl/Utq3TucudQXwU5GE9">
-                            <img src="img/location/IMG_2019.JPG" alt="">
-                        </a>
-                        <h4>อนุสาวรีย์สามบูรพาจารย์</h4>
-                    </div>
-                    <div class="Freshy-News-container-content-location-set">
-                        <a href="https://maps.app.goo.gl/7ZWBHBMbWMXRVmAg7">
-                            <img src="img/location/IMG_2020.JPG" alt="">
-                        </a>
-                        <h4>สระพระพิรุณ</h4>
-                    </div>
-                    <div class="Freshy-News-container-content-location-set">
-                        <a href="https://maps.app.goo.gl/yeWBotLD888jpz4x6">
-                            <img src="img/location/IMG_2002.JPG" alt="">
-                        </a>
-                        <h4>กองกีฬา ศิลปะและวัฒนธรรม</h4>
-                    </div>
-                    <div class="Freshy-News-container-content-location-set">
-                        <a href="https://maps.app.goo.gl/XGn2aNGPMayETQnN7">
-                            <img src="img/location/IMG_2001.JPG" alt="">
-                        </a>
-                        <h4>สนามอินทรีจันทรสถิตย์</h4>
-                    </div>
-                    <div class="Freshy-News-container-content-location-set">
-                        <a href="https://maps.app.goo.gl/vAen67PXtUBx5wo38">
-                            <img src="img/location/IMG_2003.JPG" alt="">
-                        </a>
-                        <h4>อาคารจักรพันธ์เพ็ญศิริ</h4>
-                    </div>
-                    <div class="Freshy-News-container-content-location-set">
-                        <a href="https://maps.app.goo.gl/P1UVk1P6xtMUP8eB9">
-                            <img src="img/location/IMG_2005.JPG" alt="">
-                        </a>
-                        <h4>สํานักบริการคอมพิวเตอร์</h4>
-                    </div>
-                    <div class="Freshy-News-container-content-location-set">
-                        <a href="https://maps.app.goo.gl/X6NA62HtAFJ7opi69">
-                            <img src="img/location/IMG_2004.JPG" alt="">
-                        </a>
-                        <h4>ร้านสหกรณ์</h4>
-                    </div>
-                    <div class="Freshy-News-container-content-location-set">
-                        <a href="https://maps.app.goo.gl/WRn3Fvvuc336M6Ta8">
-                            <img src="img/location/IMG_2006.JPG" alt="">
-                        </a>
-                        <h4>สถานพยาบาล</h4>
-                    </div>
-                    <div class="Freshy-News-container-content-location-set">
-                        <a href="https://maps.app.goo.gl/juBXoCzMRtNUbnPg8">
-                            <img src="img/location/IMG_2007.JPG" alt="">
-                        </a>
-                        <h4>อาคารระพีสาคริก</h4>
-                    </div>
-                    <div class="Freshy-News-container-content-location-set">
-                        <a href="https://maps.app.goo.gl/ToPyjAE9bvVt4JDc6">
-                            <img src="img/location/IMG_2015.JPG" alt="">
-                        </a>
-                        <h4>อาคารชูชาติ กำภู</h4>
-                    </div>
-                    <div class="Freshy-News-container-content-location-set">
-                        <a href="https://maps.app.goo.gl/8hTvNWuaud6q4SzA9">
-                            <img src="img/location/IMG_2008.JPG" alt="">
-                        </a>
-                        <h4>ศูนย์หนังสือ</h4>
-                    </div>
-                    <div class="Freshy-News-container-content-location-set">
-                        <a href="https://maps.app.goo.gl/oys9fi3yXYniGWSo7">
-                            <img src="img/location/IMG_2009.JPG" alt="">
-                        </a>
-                        <h4>สำนักหอสมุด</h4>
-                    </div>
-                    <div class="Freshy-News-container-content-location-set">
-                        <a href="https://maps.app.goo.gl/FRPHC6ofsZdTANnt9">
-                            <img src="img/location/IMG_2010.JPG" alt="">
-                        </a>
-                        <h4>ศูนย์เรียนรวม 1</h4>
-                    </div>
-                    <div class="Freshy-News-container-content-location-set">
-                        <a href="https://maps.app.goo.gl/XTfaHX3cxJnBBWWv5">
-                            <img src="img/location/IMG_2011.JPG" alt="">
-                        </a>
-                        <h4>ศูนย์เรียนรวม 2</h4>
-                    </div>
-                    <div class="Freshy-News-container-content-location-set">
-                        <a href="https://maps.app.goo.gl/TG9MKSarCDMKSMKg7">
-                            <img src="img/location/IMG_2013.JPG" alt="">
-                        </a>
-                        <h4>ศูนย์เรียนรวม 3</h4>
-                    </div>
-                    <div class="Freshy-News-container-content-location-set">
-                        <a href="https://maps.app.goo.gl/5ZsUkHxMntFZqmAo8">
-                            <img src="img/location/IMG_2014.JPG" alt="">
-                        </a>
-                        <h4>ศูนย์เรียนรวม 4</h4>
-                    </div>
-                    <div class="Freshy-News-container-content-location-set">
-                        <a href="https://maps.app.goo.gl/gpnAZFbtbyN2jSuy5">
-                            <img src="img/location/IMG_2016.JPG" alt="">
-                        </a>
-                        <h4>อาคาร 5 อาคารหลักของภาควิชาวิศวกรรมเครื่องกล</h4>
-                    </div>
-                    <div class="Freshy-News-container-content-location-set">
-                        <a href="https://maps.app.goo.gl/5txZviCDQ3wAdx4J9">
-                            <img src="img/location/IMG_2017.JPG" alt="">
-                        </a>
-                        <h4>ตึก 6 ภาควิชาวิศวกรรมเครื่องกล</h4>
-                    </div>
-                    <div class="Freshy-News-container-content-location-set">
-                        <a href="https://maps.app.goo.gl/HFBw1LVuwmCT7mL46">
-                            <img src="img/location/IMG_2018.JPG" alt="">
-                        </a>
-                        <h4>ตึก RDiPT อาคารเรียนปฏิบัติการของภาควิชาวิศวกรรมเครื่องกล</h4>
-                    </div>
-                </div>
-            </div>
-                <p class="mobile-scroll-text"> ← เลื่อนเพื่อดูเพิ่มเติม →</p>
-        </div>
+    .Freshy-News-container-content-map span{
+        font-size: 0.8rem;
+        font-weight: 100;
+    }
 
-        <div class="Freshy-News-container"> <!-- โรงอาหาร -->
-            <div class="Freshy-News-container-heading">
-                <div class="Freshy-News-container-heading-yellow-line"></div>
-                <div class="Freshy-News-container-heading-title">
-                    โรงอาหาร
-                </div>
-            </div>
+    .Freshy-News-container-content-map h1{
+        font-size: 1rem;
+        font-weight: 200;
+        margin-top: -30px;
+    }
 
-            <p class="click-pic">*คลิกที่รูปภาพเพื่อดูตำแหน่ง</p>
-            <div class="Freshy-News-container-content-canteen">
-                <div class="Freshy-News-container-content-canteen-set">
-                    <div class="Freshy-News-container-content-canteen-pic">
-                        <a href="https://maps.app.goo.gl/L8ygRSJzdX5MXb6A9" >
-                            <img src="img/location/IMG_1134.JPG" alt="">
-                        </a>
-                    </div>
-                    <div class="Freshy-News-container-content-canteen-text">
-                        <h2>โรงอาหารกลาง 1 (บาร์ใหม่)</h2>
-                        <h3><span class="canteen-label">เปิดให้บริการ</span> : เปิดให้บริการทุกวัน ไม่เว้นวันหยุดราชการ<br>
-                            <span class="canteen-label">เวลาให้บริการ</span> : ส่วนของร้านค้าเปิด 6.00 น. - 18.00 น <br>
-                            <span class="canteen-indent">: โถงโรงอาหารเปิดถึง 22.00 น.</span><br>
-                            <span class="canteen-label">สถานที่ตั้ง</span> : ถนนจงรักปรีชานนท์ ใกล้กับสระว่ายน้ำ <br>
-                            <span class="canteen-indent">- จุฬาภรณ์วลัยลักษณ์</span>
-                        </h3>
-                    </div>
-                </div>
-                <div class="Freshy-News-container-content-canteen-set">
-                    <div class="Freshy-News-container-content-canteen-pic">
-                        <a href="https://maps.app.goo.gl/9aRZdDq4wsospZso9" >
-                            <img src="img/location/IMG_1136.JPG" alt="">
-                        </a>
-                    </div>
-                    <div class="Freshy-News-container-content-canteen-text">
-                        <h2>โรงอาหารกลาง 2 (บาร์ใหม่กว่า)</h2>
-                        <h3><span class="canteen-label">เปิดให้บริการ</span> : เปิดให้บริการวันจันทร์ – วันเสาร์  <br>
-                            <span class="canteen-indent">: หยุดวันอาทิตย์</span><br>
-                            <span class="canteen-label">เวลาให้บริการ</span> : ส่วนของร้านค้าเปิด 06.00 น. - 14.00 น. <br>
-                            <span class="canteen-indent">: โถงโรงอาหารเปิด 06.00 น. - 16.00 น.</span><br>
-                            <span class="canteen-indent">: ห้องสโมสรบุคลากรเปิดถึง 22.00 น.</span><br>
-                            <span class="canteen-label">สถานที่ตั้ง</span> : ถนนไพฑูรย์อิงคสุวรรณ เยื้องอาคารสารนิเทศ <br>
-                            <span class="canteen-indent">- 50 ปี ติดกับคณะอุตสาหกรรมเกษตร</span>    
-                    </div>
-                </div>
-                <div class="Freshy-News-container-content-canteen-set">
-                    <div class="Freshy-News-container-content-canteen-pic">
-                        <a href="https://maps.app.goo.gl/wSRaNk1mp9SF33BZ6" >
-                            <img src="img/location/IMG_1135.PNG" alt="">
-                        </a>
-                    </div>
-                    <div class="Freshy-News-container-content-canteen-text">
-                        <h2 >โรงอาหารคณะวิศวกรรมศาสตร์ (บาร์วิศวะ IUP)</h2>
-                        <h3><span class="canteen-label">เปิดให้บริการ</span> : เปิดให้บริการวันจันทร์ – วันศุกร์ <br>
-                            <span class="canteen-indent">: หยุดวันเสาร์-อาทิตย์</span><br>
-                            <span class="canteen-label">เวลาให้บริการ</span> : 5.30 น. - 18.00 น. <br>
-                            <span class="canteen-label">สถานที่ตั้ง</span> : คณะวิศวกรรมศาสตร์ และใกล้กับ ศร.1</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
+    .Freshy-News-container-content-map h3{
+        font-size: 0.9rem;
+        font-weight: 200;
+    }
+    
+    .Freshy-News-container-content-map h4{
+        font-size: 0.8rem;
+        font-weight: 200;
+        text-align: center;
+    }
 
-        <div class="Freshy-News-container"> <!-- Check list -->
-            <div class="Freshy-News-container-heading">
-                <div class="Freshy-News-container-heading-yellow-line"></div>
-                <div class="Freshy-News-container-heading-title">
-                    Check list ของใช้
-                </div>
-            </div>
-            <div class="Freshy-News-container-content-checklist">
-                <div class="Freshy-News-container-content-checklist-set">
-                    <div class="Freshy-News-container-content-checklist-set-text">
-                        <i class="fa-solid fa-bed"></i>
-                        <h2>หมวดของใช้ในห้องนอน</h2>
-                    </div>
+    .Freshy-News-container-heading-black-line-maps{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 
-                    <label><input type="checkbox">หมอน</label>
-                    <label><input type="checkbox">ปลอกหมอน / ผ้าปูที่นอน</label>
-                    <label><input type="checkbox">ผ้าห่ม / ผ้านวม</label>
-                    <label><input type="checkbox">พัดลม</label>
-                    <label><input type="checkbox">ไฟอ่านหนังสือ</label>
-                </div>
-                <div class="Freshy-News-container-content-checklist-set">
-                    <div class="Freshy-News-container-content-checklist-set-text">
-                        <i class="fa-solid fa-bath"></i>
-                        <h2>หมวดของใช้ในห้องน้ำ</h2>
-                    </div>
+    .Freshy-News-container-content-location{
+        margin: 20px;
+    }
 
-                    <label><input type="checkbox">ผ้าเช็ดตัว / ผ้าเช็ดผม</label>
-                    <label><input type="checkbox">สบู่ / แชมพู / ครีมนวด</label>
-                    <label><input type="checkbox">ยาสีฟัน / แปรงสีฟัน</label>
-                    <label><input type="checkbox">โฟมล้างหน้า</label>
-                    <label><input type="checkbox">กระจกเล็ก</label>
-                    <label><input type="checkbox">หวี / แปรงผม</label>
-                    <label><input type="checkbox">รองเท้าแตะในห้องน้ำ</label>
-                    <label><input type="checkbox">ถังขยะเล็ก</label>
-                    <label><input type="checkbox">กระดาษชำระ / ทิชชู่เปียก</label>
-                    <label><input type="checkbox">ผ้าเช็ดมือ</label>
-                </div>
-                <div class="Freshy-News-container-content-checklist-set">
-                    <div class="Freshy-News-container-content-checklist-set-text">
-                        <i class="fa-solid fa-broom"></i>
-                        <h2>หมวดของทำความสะอาด</h2>
-                    </div>  
+    .Freshy-News-container-content-location-set{
+        min-width: calc((100% - 2rem) / 3);
+    }
 
-                    <label><input type="checkbox">ตระกร้าใส่ผ้า</label>
-                    <label><input type="checkbox">ผงซักฟอก / น้ำยาปรับผ้านุ่ม</label>
-                    <label><input type="checkbox">ไม้หนีบ / ไม้แขวนเสื้อ</label>
-                    <label><input type="checkbox">แปรงซักผ้า</label>
-                    <label><input type="checkbox">ไม้กวาด / ที่ตักผง / ไม้ถูพื้น</label>
-                    <label><input type="checkbox">ถุงขยะ</label>
-                </div>
-                <div class="Freshy-News-container-content-checklist-set">
-                    <div class="Freshy-News-container-content-checklist-set-text">
-                        <i class="fa-solid fa-capsules"></i>
-                        <h2>หมวดยาสามัญประจำบ้าน</h2>
-                    </div>
+    .Freshy-News-container-content-location-set img{
+        width: 75px;
+        height: 50px;
+        margin-bottom: -10px;
+    }
 
-                    <label><input type="checkbox">ยาพารา</label>
-                    <label><input type="checkbox">ยาแก้แพ้</label>
-                    <label><input type="checkbox">ยาแก้ปวดท้อง / ท้องเสีย</label>
-                    <label><input type="checkbox">ยาธาตุน้ำขาว</label>
-                    <label><input type="checkbox">ยาดม / ยาหม่อง</label>
-                    <label><input type="checkbox">ยาแก้ไอ</label>
-                    <label><input type="checkbox">เบตาดีน / แอลกอฮอล์ล้างแผล</label>
-                    <label><input type="checkbox">พลาสเตอร์ยา / สำลี</label>
-                    <label><input type="checkbox">ที่วัดไข้</label>
-                    <label><input type="checkbox">ยากันยุง</label>
-                </div> 
-                <div class="Freshy-News-container-content-checklist-set">
-                    <div class="Freshy-News-container-content-checklist-set-text">
-                        <i class="fa-solid fa-list"></i>
-                        <h2>หมวดของใช้เบ็ดเตล็ด</h2>
-                    </div>
+    .Freshy-News-container-content-location h4{
+        font-size: 0.5rem;
+        font-weight: 100;
+    }
 
-                    <label><input type="checkbox">ปลั๊กพ่วง</label>
-                    <label><input type="checkbox">สายชาร์จ</label>
-                    <label><input type="checkbox">ไฟฉาย / ถ่าน</label>
-                    <label><input type="checkbox">แฟ้มเอกสาร / สมุดโน้ต</label>
-                    <label><input type="checkbox">กรรไกร / คัตเตอร์ / เทปกาว</label>
-                    <label><input type="checkbox">พัดลมพกพา</label>
-                </div>
-                <div class="Freshy-News-container-content-checklist-set">
-                    <div class="Freshy-News-container-content-checklist-set-text">
-                        <i class="fa-solid fa-list"></i>
-                        <h2>หมวดของทั่วไป</h2>
-                    </div>
+    .Freshy-News-container-content-location::scroll-button(right), .Freshy-News-container-content-location::scroll-button(left){
+        font-size: 2rem;
+    }
 
-                    <label><input type="checkbox">แก้วน้ำ</label>
-                    <label><input type="checkbox">จาน / ช้อน-ส้อม / ตะเกียบ</label>
-                    <label><input type="checkbox">ไมโครเวฟ / กาต้มน้ำ *(ถ้าหออนุญาต)</label>
-                    <label><input type="checkbox">อาหารแห้ง / ขนม / บะหมี่กึ่งสำเร็จรูป</label>
-                    <label><input type="checkbox">กระติกน้ำ / กระบอกน้ำ</label>
-                    <label><input type="checkbox">น้ำยาล้างจาน / ฟองน้ำ</label>
-                </div>
-                <div class="Freshy-News-container-content-checklist-set">
-                    <div class="Freshy-News-container-content-checklist-set-text">
-                        <i class="fa-solid fa-cloud-rain"></i>
-                        <h2>หมวดของใช้หน้าฝน</h2>
-                    </div>
+    .Freshy-News-container-content-canteen{
+        margin: 20px;
+        display: grid;
+        justify-content: center;
 
-                    <label><input type="checkbox">รองเท้าบูท(แล้วแต่คน)</label>
-                    <label><input type="checkbox">ร่ม</label>
-                    <label><input type="checkbox">เสื้อกันฝน</label>
-                    <label><input type="checkbox">ซอง-ถุงกันน้ำ</label>
-                    <label><input type="checkbox">รองเท้าแตะ</label>
-                </div> 
-                <div class="Freshy-News-container-content-checklist-set">
-                    <div class="Freshy-News-container-content-checklist-set-text">
-                        <i class="fa-solid fa-gear"></i>
-                        <h2>หมวดการเรียนวิศวะ</h2>
-                    </div>
+    }
 
-                    <label><input type="checkbox">เครื่องคิดเลข<br>
-                        *(ทางคณะมีแจก แต่ต้องรอหน่อย)</label>
-                    <label><input type="checkbox">ไม้ฉากสามเหลี่ยม / ไม้ที</label>
-                    <label><input type="checkbox">ดินสอ / ยางลบ / กบเหลา</label>
-                    <label><input type="checkbox">ไส้ดินสอ</label>
-                    <label><input type="checkbox">วงเวียน *(หาแบบดีๆมาใช้)</label>
-                    <label><input type="checkbox">แผ่นกั้นลบ</label>
-                    <label><input type="checkbox">เทมเพลต *(แล้วแต่คนจะซื้อ)</label>
-                    <label><input type="checkbox">เทปกาว</label>
-                    <label><input type="checkbox">กระดานเขียนแบบ *(แนะนำขนาด A3)</label>
-                    <label><input type="checkbox">หนังสือปฏิบัติการ ฟิสิกส์ เคมี<br>
-                        *(สามารถขอจากรุ่นพี่ได้)</label>
-                    <p>* ใครที่ยังไม่มี ยังไม่จำเป็นต้องซื้อ <br>รออาจารย์ประจำรายวิชาแจ้งรายละเอียดอีกที</p>
-                </div> 
-            </div>
-            <p class="mobile-scroll-text"> ← เลื่อนเพื่อดูเพิ่มเติม →</p>
-        </div>
+    .Freshy-News-container-content-canteen img{
+        width: 200px;
+        height: 125px;
+        margin-bottom: -10px;
+    }
 
-        <div class="Freshy-News-container"> <!-- App / Ig -->
-            <div class="Freshy-News-container-heading">
-                <div class="Freshy-News-container-heading-yellow-line"></div>
-                <div class="Freshy-News-container-heading-title">
-                    แอพ / IG ที่ควรมีเอาไว้
-                </div>
-            </div>
+    .Freshy-News-container-content-canteen h2{
+        font-size: 0.7rem;
+        margin: 10px;
+    }
 
-            <p class="click-pic">*คลิกที่รูปภาพเพื่อดาวน์โหลด / ติดตามเพจ</p>
-            <div class="Freshy-News-container-content-app">
-                <div class="Freshy-News-container-content-app-app">
-                    <div class="Freshy-News-container-content-app-app-heading">
-                        <i class="fa-solid fa-download"></i>
-                        <h2>Application</h2>
-                    </div>
-                    <div class="Freshy-News-container-content-app-app-pic">
-                        <a href="javascript:void(0)" onclick="nisitkuopenStore()" class="app">
-                            <img src="img/appig/nisitku.png" alt="">
-                            <h3>NisitKU</h3>
-                        </a>
-                        <a href="javascript:void(0)" onclick="insidekuopenStore()" class="app">
-                            <img src="img/appig/insideku.png" alt="">
-                            <h3>insideKU</h3>
-                        </a>
-                        <a href="javascript:void(0)" onclick="kutalaiopenStore()" class="app">
-                            <img src="img/appig/kulai.png" alt="">
-                            <h3>KU Talai</h3>
-                        </a>
-                        <a href="javascript:void(0)" onclick="kubikeopenStore()" class="app">
-                            <img src="img/appig/kubike.png" alt="">
-                            <h3>KU Bike</h3>
-                        </a>
-                        <a href="javascript:void(0)" onclick="viabusopenStore()" class="app">
-                            <img src="img/appig/via.png" alt="">
-                            <h3>ViaBus</h3>
-                        </a>
-                    </div>
-                </div>
-                <div class="Freshy-News-container-content-app-ig">
-                    <div class="Freshy-News-container-content-app-app-heading">
-                        <i class="fa-brands fa-instagram"></i>
-                        <h2>Instagram</h2>
-                    </div>
-                    <div class="Freshy-News-container-content-app-ig-set">
-                        <div class="Freshy-News-container-content-app-ig-set-pic">
-                            <a href="https://www.instagram.com/freshy.ku?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                                <img src="img/appig/freshy.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="Freshy-News-container-content-app-ig-set-text">
-                                <h3>freshy.ku</h3>
-                                <h4>แหล่งรวมข้อมูลสำคัญที่น่าสนใจ <span>ของมหาวิทยาลัยเกษตรศาสตร์</span></h4>
-                        </div>
-                    </div>
+    .Freshy-News-container-content-canteen h3{
+        font-size: 0.6rem;
+        font-weight: 100;
+        margin-bottom: 30px;
+    }
 
-                    <div class="Freshy-News-container-content-app-ig-set">
-                        <div class="Freshy-News-container-content-app-ig-set-pic">
-                            <a href="https://www.instagram.com/kusab.bk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                                <img src="img/appig/kusab.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="Freshy-News-container-content-app-ig-set-text">
-                                <h3>kusab.bk</h3>
-                                <h4>องค์การบริหาร องค์การนิสิต <span>ม.เกษตรศาสตร์</span> </h4>
-                        </div>
-                    </div>  
+    .canteen-indent{
+        margin-left: 57px;
+    }
 
-                    <div class="Freshy-News-container-content-app-ig-set">
-                        <div class="Freshy-News-container-content-app-ig-set-pic">
-                            <a href="https://www.instagram.com/smovidvakaset?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                                <img src="img/appig/smo.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="Freshy-News-container-content-app-ig-set-text">
-                                <h3>smovidvakaset</h3>
-                                <h4>สโมสรนิสิต คณะวิศวฯ <span>มหาวิทยาลัยเกษตรศาสตร์ บางเขน</span></h4>
-                        </div>
-                    </div>
+    .canteen-label{
+        width: 55px;
+    }
 
-                    <div class="Freshy-News-container-content-app-ig-set">
-                        <div class="Freshy-News-container-content-app-ig-set-pic">
-                            <a href="https://www.instagram.com/kaset.engineering?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                                <img src="img/appig/kaseteng.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="Freshy-News-container-content-app-ig-set-text">
-                                <h3>kaset.engineering</h3>
-                                <h4>Official Account ของคณะวิศวฯ <span>มหาวิทยาลัยเกษตรศาสตร์</span></h4>
-                        </div>
-                    </div>
+    .Freshy-News-container-content-checklist{
+        margin: 20px;
+    }
 
-                    <div class="Freshy-News-container-content-app-ig-set">
-                        <div class="Freshy-News-container-content-app-ig-set-pic">
-                            <a href="https://www.instagram.com/mech.ku?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                                <img src="img/appig/mech.jpg" alt="">
-                            </a>        
-                        </div>
-                        <div class="Freshy-News-container-content-app-ig-set-text">
-                                <h3>mech.ku</h3>
-                                <h4>ภาควิชาวิศวกรรมเครื่องกล คณะวิศวฯ <span>มหาวิทยาลัยเกษตรศาสตร์</span></h4>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
+    .Freshy-News-container-content-checklist-set{
+        min-width: calc(100%);
+    }
+
+    .Freshy-News-container-content-checklist::scroll-button(right), .Freshy-News-container-content-checklist::scroll-button(left){
+        font-size: 2rem;
+    }
+
+
+    .Freshy-News-container-content-checklist-set h2{
+        font-size: 0.9rem;
+        font-weight: 300;
+        margin: 20px 0px;
+        text-align: left;
+    }
+
+    .Freshy-News-container-content-checklist-set label{
+        font-size: 0.75rem;
+        font-weight: 100;
+        margin-left: 20px;
         
-    </section>
+        align-items: flex-start;
+    }
 
-    <section class="end-credit">
+    .Freshy-News-container-content-checklist-set-text{
+        margin-left:30px;
+    }
 
-    </section>
+    .Freshy-News-container-content-checklist-set-text svg{
+        font-size: 1rem;
+    }
 
-    <script src="script.js"></script>
-</body>
-</html>
+    .Freshy-News-container-content-checklist-set p{
+        font-size: 0.6rem;
+        margin-left: 20px;
+    }
+
+    .Freshy-News-container-content-checklist-set input{
+        transform: translateY(3px);
+    }
+
+    .Freshy-News-container-content-app{
+        margin: 20px;
+        flex-direction: column;
+    }
+
+    .Freshy-News-container-content-app-app{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .Freshy-News-container-content-app-app img{
+        width: 50px;
+        margin-left: 20px;
+    }
+
+    .Freshy-News-container-content-app h2{
+        font-size: 0.9rem;
+        font-weight: 300;
+        margin: 20px 0px;
+        text-align: left;
+    }
+
+    .Freshy-News-container-content-app svg{
+        font-size: 1rem;
+    }
+
+    .Freshy-News-container-content-app-app-heading{
+        margin-left: 30px;
+    }
+
+    .Freshy-News-container-content-app-ig{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .Freshy-News-container-content-app-ig-set{
+        display: grid;
+        justify-content: center;
+    }
+
+    .Freshy-News-container-content-app-ig-set-text h4{
+        margin-left: 10px;
+        font-size: 0.7rem;
+        font-weight: 100;
+    }
+
+    .Freshy-News-container-content-app-ig-set-text h3{
+        margin-left: 20px;
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+
+    .Freshy-News-container-content-app-ig-set-pic img{
+        margin-left: 0px;
+        margin-bottom: -25px;
+    }
+
+    .mobile-scroll-text{
+        display: contents;
+        font-size: 0.8rem;
+        font-weight: 100;
+    }
+
+    .click-pic{
+        font-size: 0.6rem;
+        font-weight: 100;
+        margin-left: 20px;
+    }
+
+}
+
