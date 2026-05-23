@@ -868,13 +868,21 @@ nav a:hover {
     }
 
     .Freshy-News-container-content-location-set img{
-        width: 163px;
+        width: 150px;
         height: 100px;
     }
 
     .Freshy-News-container-content-location-set h4{
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-weight: 200; 
+    }
+
+    .location-wrapper{
+        border-radius: 10px;
+        background-color: #3d4f689d;
+        margin-top: 20px;
+        padding-top: 10px;
+        margin-bottom: 20px;
     }
 
     .Freshy-News-container-content-canteen img{
@@ -947,7 +955,6 @@ nav a:hover {
         width: 200px;
         height: 80px;
     }
-
 
     .Freshy-News-container-content-app h3{
         font-size: 1.3rem;
@@ -1240,7 +1247,6 @@ nav a:hover {
 
     .Freshy-News-container-content-location{
         margin: 20px;
-        margin-bottom: -20px;
     }
 
     .Freshy-News-container-content-location-set{
@@ -1396,5 +1402,6 @@ nav a:hover {
         font-weight: 100;
         margin-left: 20px;
     }
+
 }
 
