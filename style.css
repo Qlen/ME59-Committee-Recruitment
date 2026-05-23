@@ -581,6 +581,14 @@ nav a:hover {
     gap: 20px;
 }
 
+.Freshy-News-container-content-app img{
+    transition: 0.3s ease;
+}
+
+.Freshy-News-container-content-app img:hover{
+    transform: scale(1.03);
+}
+
 .Freshy-News-container-content-app-app{
     background-color: #3d4f689d;
     width: 650px;
