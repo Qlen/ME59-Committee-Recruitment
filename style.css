@@ -569,10 +569,10 @@ nav a:hover {
 
 .Freshy-News-container-content-checklist-set p{
     font-weight: 100;
-    font-size: 0.6rem;
+    font-size: 0.9rem;
     color: red;
     text-align: start;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .Freshy-News-container-content-app{
@@ -1344,6 +1344,11 @@ nav a:hover {
 
     .Freshy-News-container-content-checklist-set-text svg{
         font-size: 1rem;
+    }
+
+    .Freshy-News-container-content-checklist-set p{
+        font-size: 0.6rem;
+        margin-left: 20px;
     }
 
     .Freshy-News-container-content-app{
