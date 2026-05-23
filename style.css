@@ -553,7 +553,7 @@ nav a:hover {
     color: white;
     margin-left: 40px;
     text-align: left;
-    align-items:first baseline
+    align-items: first baseline;
 }
 
 .Freshy-News-container-content-checklist-set-text{
@@ -1334,6 +1334,8 @@ nav a:hover {
         font-size: 0.75rem;
         font-weight: 100;
         margin-left: 20px;
+        
+        align-items: flex-start;
     }
 
     .Freshy-News-container-content-checklist-set-text{
