@@ -1351,6 +1351,10 @@ nav a:hover {
         margin-left: 20px;
     }
 
+    .Freshy-News-container-content-checklist-set input{
+        transform: translateY(2px);
+    }
+
     .Freshy-News-container-content-app{
         margin: 20px;
         flex-direction: column;
