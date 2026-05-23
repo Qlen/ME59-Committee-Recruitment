@@ -1422,7 +1422,7 @@ nav a:hover {
 
     .mobile-scroll-text{
         display: contents;
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-weight: 100;
     }
 
