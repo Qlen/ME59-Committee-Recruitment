@@ -393,7 +393,7 @@ nav a:hover {
     position: fixed;
     position-anchor: --Freshy-News-container-content-location;
     position-area: right center; 
-    bottom: 80px;
+    bottom: 130px;
     translate: -30%;
     text-shadow:
         3px 3px 5px rgba(0,0,0,0.9),
@@ -509,7 +509,6 @@ nav a:hover {
     position: fixed;
     position-anchor: --Freshy-News-container-content-checklist;
     position-area: right center; 
-    bottom: 80px;
     translate: -30%;
     text-shadow:
         3px 3px 5px rgba(0,0,0,0.9),
@@ -720,6 +719,10 @@ nav a:hover {
         height: 160px;
     }
 
+    .Freshy-News-container-content-location::scroll-button(right), .Freshy-News-container-content-location::scroll-button(left){
+        bottom: 140px;
+    }
+
     .Freshy-News-container-content-canteen img{
         width: 360px;
         height: 225px;
@@ -896,6 +899,11 @@ nav a:hover {
         font-weight: 200; 
     }
 
+    .Freshy-News-container-content-location::scroll-button(right), .Freshy-News-container-content-location::scroll-button(left){
+        font-size: 3rem;
+        bottom: 98px;
+    }
+    
     .location-wrapper{
         border-radius: 10px;
         background-color: #3d4f689d;
@@ -1284,7 +1292,8 @@ nav a:hover {
     }
 
     .Freshy-News-container-content-location::scroll-button(right), .Freshy-News-container-content-location::scroll-button(left){
-        font-size: 2rem;
+        font-size: 1.8rem;
+        bottom: 60px;
     }
 
     .Freshy-News-container-content-canteen{
